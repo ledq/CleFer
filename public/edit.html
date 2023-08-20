@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>CleFer</title>
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-dark fixed-top">
+    
+  </nav> -->
+
+  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+    <header class="bmd-layout-header">
+      <div class="collapse faded fixed-top" id="search-box">
+        <button class="btn bmd-btn-icon" data-toggle="collapse" data-target="#search-box" data-dismiss="collapse">
+          <i class="material-icons">close</i>
+        </button>
+        <div id="search-wr2">
+          <div class="input-group rounded">
+            <input id="search-input" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"  />
+            <span class="input-group-text border-0" id="search-addon">
+              <i id="search-redirect" class="material-icons">search</i>
+            </span>
+          </div>
+        </div>
+        <!-- <input type="text" class="search-click" name="" placeholder="search here..." /> -->
+      </div>
+
+      <div id= "navbar-wr" class="navbar navbar-dark bg-faded fixed-top justify-content-start">
+        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s2">
+          <span class="sr-only">Toggle drawer</span>
+          <i class="material-icons">apps</i>
+        </button>
+        <a class="navbar-brand titleText" href="/home.html">CleFer </a>
+
+
+        <div id = "search-wr">
+          <!-- <input type="text" class="search-click" name="" placeholder="search here..." /> -->
+          <button id="search-button" class="btn bmd-btn-icon" data-toggle="collapse" data-target="#search-box" aria-haspopup="true" aria-expanded="false">
+            <i id= "search-ico" class="material-icons">search</i>
+          </button>
+
+          
+
+
+          <div class="dropdown pull-xs-left">
+            <button class="btn bmd-btn-icon dropdown-toggle" type="button" id="lr1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i id="acc-manager" class="material-icons">person</i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="lr1">
+              <button id="menuEditAcc" class="dropdown-item" type="button" data-toggle="modal" data-target="#editDialog"> <i class="material-icons">settings</i>&nbsp;&nbsp;&nbsp;Edit profile</button>
+            
+              <button id="menuSignOut" class="dropdown-item" type="button"> <i class="material-icons">login</i>&nbsp;&nbsp;&nbsp;Sign Out</button>
+            </div>
+          </div>
+        
+        
+        </div>
+        <!-- You should TRY COLLAPSE since it can OVERLAY -->
+      </div>
+    </header>
+    <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+      <header>
+        <a class="navbar-brand titleText">CleFer</a>
+      </header>
+      <ul class="list-group">
+        <a class="list-group-item" id = "home"><i class= "material-icons">home</i>Home</a>
+        <a class="list-group-item" id = "history"><i class= "material-icons">history</i>History</a> 
+        <a class="list-group-item" id = "your-works"><i class= "material-icons">edit</i>Your works</a>
+      </ul>
+    </div>
+    <main class="bmd-layout-content">
+
+      <!-- CHANGE HERE -->
+      <div id="editPage" class="container page-container">
+        
+          <div class="form-group">
+            <label class="edit-label" for="song-name-input">Song name</label>
+            <input type="email" class="form-control" id="song-name-input" placeholder="">
+          </div>
+
+          <div class="form-group">
+            <label class="edit-label" for="artist-name-input">Artist name</label>
+            <input type="email" class="form-control" id="artist-name-input" placeholder="">
+          </div>
+          
+          
+          <div class="form-group">
+            <div class="functional-row">
+              <label class="edit-label" for="text-area-input">Lyrics</label>
+              <div class="utility-tool">
+                <button id="link-button" class="btn bmd-btn-icon" data-toggle="modal" data-target="#addImageDialog">
+                  <i id= "link-ico" class="material-icons">add_link</i>
+                </button>
+
+                <button id="save-button" class="btn bmd-btn-icon">
+                  <i id= "save-ico" class="material-icons">save</i>
+                </button>
+
+               
+              </div>
+            </div>
+            
+            <textarea class="form-control" id="text-area-input" rows="25"></textarea>
+          </div>
+        
+          
+
+
+
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="addImageDialog" tabindex="-1" role="dialog" aria-labelledby="add-link-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="add-link-label">Add URL link</h5>
+              
+            </div>
+            <div class="modal-body">
+    
+              <div class="form-group bmd-form-group"> <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                <label for="inputLink" class="bmd-label-floating">Link:</label>
+                <input type="text" id="inputLink">
+              </div>
+              
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+              <button type="button" class="btn btn-primary" id ="submitAddImage" data-dismiss="modal">SAVE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CHANGE HERE -->
+      
+
+    </main>
+  </div>
+
+
+
+
+
+    
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+ <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

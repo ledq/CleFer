@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>CleFer</title>
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-dark fixed-top">
+    
+  </nav> -->
+
+  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+    <header class="bmd-layout-header">
+      <div class="collapse faded fixed-top" id="search-box">
+        <button class="btn bmd-btn-icon" data-toggle="collapse" data-target="#search-box" data-dismiss="collapse">
+          <i class="material-icons">close</i>
+        </button>
+        <div id="search-wr2">
+          <div class="input-group rounded">
+            <input id="search-input" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"  />
+            <span class="input-group-text border-0" id="search-addon">
+              <i id="search-redirect" class="material-icons">search</i>
+            </span>
+          </div>
+        </div>
+        <!-- <input type="text" class="search-click" name="" placeholder="search here..." /> -->
+      </div>
+
+      <div id= "navbar-wr" class="navbar navbar-dark bg-faded fixed-top justify-content-start">
+        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s2">
+          <span class="sr-only">Toggle drawer</span>
+          <i class="material-icons">apps</i>
+        </button>
+        <a class="navbar-brand titleText" href="/home.html">CleFer </a>
+
+
+        <div id = "search-wr">
+          <!-- <input type="text" class="search-click" name="" placeholder="search here..." /> -->
+          <button id="search-button" class="btn bmd-btn-icon" data-toggle="collapse" data-target="#search-box" aria-haspopup="true" aria-expanded="false">
+            <i id= "search-ico" class="material-icons">search</i>
+          </button>
+
+          
+
+
+          <div class="dropdown pull-xs-left">
+            <button class="btn bmd-btn-icon dropdown-toggle" type="button" id="lr1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i id="acc-manager" class="material-icons">person</i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="lr1">
+              <button id="menuEditAcc" class="dropdown-item" type="button" data-toggle="modal" data-target="#editDialog"> <i class="material-icons">settings</i>&nbsp;&nbsp;&nbsp;Edit profile</button>
+            
+              <button id="menuSignOut" class="dropdown-item" type="button"> <i class="material-icons">login</i>&nbsp;&nbsp;&nbsp;Sign Out</button>
+            </div>
+          </div>
+        
+        
+        </div>
+        <!-- You should TRY COLLAPSE since it can OVERLAY -->
+      </div>
+    </header>
+    <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+      <header>
+        <a class="navbar-brand titleText">CleFer</a>
+      </header>
+      <ul class="list-group">
+        <a class="list-group-item" id = "home"><i class= "material-icons">home</i>Home</a>
+        <a class="list-group-item" id = "history"><i class= "material-icons">history</i>History</a> 
+        <a class="list-group-item" id = "your-works"><i class= "material-icons">edit</i>Your works</a>
+      </ul>
+    </div>
+    <main class="bmd-layout-content">
+
+      <!-- CHANGE HERE -->
+      <div id="profilePage">
+        <!-- CHANGE HERE -->
+          <!-- PROFILE PAGE -->
+          <div class="rounded-top text-white d-flex flex-row" style="background-color: #fbc2eb; height:220px;">
+            <div class="ms-4 mt-5 d-flex flex-column profile-section">
+              <div><img id="profile-ava" src="images/bochiFigure.jpg"
+                alt="Generic placeholder image" class="rounded-circle img-fluid img-thumbnail mt-4 mb-2"
+                style="z-index: 1"></div>
+              <div id="profile-name-display" style = "z-index: 1;"> GuitarHero19 </div>
+            </div>
+            
+          </div>
+          <div class="text-black">
+            <div class="d-flex justify-content-end text-center py-1">
+              <button id="follow-button" class="btn btn-outline-primary profile-buttons">
+                <i class="material-icons">bookmark</i>&nbsp;Follow
+              </button>
+              <!-- <button id="request-button" class="btn btn-outline-primary profile-buttons">
+                <i class="material-icons">front_hand</i>&nbsp;Request
+              </button> -->
+            </div>
+          </div>
+          <div class="card-body text-black profile-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about"
+                  aria-selected="true">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work"
+                  aria-selected="false">Works</a>
+              </li>
+              
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">No INFO?</div>
+              <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
+                <div id="list-container">Hooo</div>
+              </div>
+              
+            </div>
+            
+            
+          </div>
+        <!-- PROFILE PAGE -->
+      </div>
+      
+      
+    </main>
+  </div>
+
+
+
+
+
+    
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+ <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,596 @@
+body {
+    
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+#bochi {
+    
+    
+    background-image: url('/images/bochiAlt.jpg');
+    background-repeat: repeat;
+    
+    /* background: cover; */
+    
+}
+
+
+.navbar {
+    background-color: #FFFFFF;          
+    /* background-color: antiquewhite; */
+    color: #D35298;
+    box-shadow: none;
+    padding: 0.1rem;
+}
+
+
+
+#navbar-wr {
+    flex-wrap: nowrap;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+    color: #D35298;
+    margin-left: 2vw;
+    
+}
+
+.navbar-dark .navbar-toggler {
+    color: #000000;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+#loginPage.page-container {
+    margin-top: 155px;
+}
+
+#loginContainer{
+    display: inline-block   ;
+    text-align: center;
+    padding-bottom: 8px;
+    background-color: white;
+    
+    
+    min-width: 300px;
+    max-width: 360px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+#title-text{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #D35298;
+}
+
+.titleText {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+} 
+
+#rosefireButton {
+    color:#FFFFFF;
+    background: #800000;
+}
+
+
+
+#myfab{
+    background-color: #800000;
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#myfab:active{
+    transform:translateY(2px);
+    opacity: 0.8;
+}
+
+#columns {
+    column-count: 3;
+    column-gap: 5px;
+}
+
+@media (max-width: 600px) {
+    #bochi {
+        background-image: url('/images/bochi.jpg');
+    }
+    .btn.btn-outline-primary.profile-buttons{
+        font-size: 0;
+       
+        
+    }
+    .rounded-circle{
+        height: 150px!important;
+        width: 150px!important;
+    }
+    .profile-body{
+        margin: 0 1.5vw!important;
+    }
+}
+
+#listPage .pin {
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    margin: 0 2px 15px;
+    padding: 10px;
+    padding-bottom: 5px;
+    background: linear-gradient(45deg, #FFF, #EEE);
+    transition: all .2s ease;
+}
+
+#listPage .pin img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 3px;
+}
+
+#listPage .pin p {
+    font: 12px/18px Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    max-height: 18px;
+    overflow: hidden;
+}
+
+
+#detailPage .pin {
+    text-align: center;
+    display: inline-block;
+    /* box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);  */
+    background: linear-gradient(45deg, #FFF, #EEE);
+    margin: none;
+    /* width: 100%; */
+    
+}
+
+
+
+
+#detailPage .pin p {
+    font: 12px/18px Arial, sans-serif;
+    text-align: center;
+    margin: 1.5vw;
+    overflow: hidden;
+}
+
+.dropdown-menu-right {
+    left: -110px;
+}
+
+#imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* #rosefireButton .firebaseui-idp-text {
+    color:#800000;
+    display: table-cell;
+    font-size: 14px;
+    padding-left: 16px;
+    text-transform: none;
+    vertical-align: middle;
+} */
+
+
+
+.bmd-layout-content {
+    height: 100vh;
+}
+
+.bmd-layout-drawer>header {
+    background-color: white;
+    color: #D35298;
+}
+
+.bmd-layout-drawer>ul {
+    background-color: #FFFFFF;
+    
+}
+
+.list-group-item :first-child {
+    margin-right: 0.75rem;
+}
+
+#menuEdit,
+#menuDelete {
+    display: none;
+}
+
+
+
+#search-wr{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-click {
+  /* background-color: transparent; */
+  border: transparent;
+  outline: none;
+  background-size: 22px;
+  background-position: 13px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  padding: 25px;
+  transition: all 0.5s;
+}
+.search-click:focus {
+  width: 200px;
+  /* padding-left: 50px; */
+}
+.search-click {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+}
+.search-click input {
+  background: white;
+  border: 1px solid #ccc;
+  outline: none;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 0%;
+  padding: 10px;
+}
+
+
+
+#search-wr .bmd-form-group {
+    padding-top: 0;
+    
+}
+
+#acc-manager{
+    color:#000000;
+
+}
+
+#search-button{
+    margin-right: 4vw;
+}
+
+#search-ico {
+    color:#000000;
+}
+
+
+
+#search-box.collapse.show {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 10;
+    padding: 12px;
+    
+    
+}
+
+#search-wr2 {
+    flex-grow: 1;
+    padding: 0 20px;
+    margin-top: 0 ;
+    margin-bottom: 0;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    background-color: #eeeeee;
+    border-width: 1px;
+    border-color: black;
+    border-style: none;
+    border-radius: 50px;
+}
+
+.custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
+    background-image: none ;
+
+}
+
+#prompt{
+    text-align: start;
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* SAMPLE */
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fbc2eb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
+    }
+
+#profile-name-display{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mt-5, .my-5 {
+    margin-top: 5rem!important;
+}
+
+.profile-section{
+    margin-left: 3vw;
+}
+
+.btn.btn-outline-primary.profile-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem ;
+    /* font-size: 12px; */
+    color: #D35298;
+    border-color: #D35298;
+    margin-top: 1rem;
+    margin-right: 4vw;
+    
+}
+
+/* #follow-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem ;
+    padding-left: 1rem;
+    color: #D35298;
+    border-color: #D35298;
+    
+}
+
+#request-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem ;
+    padding-left: 1rem;
+    color: #D35298;
+    border-color: #D35298;
+    
+} */
+
+
+.btn-outline-primary.active.custom-file-control:before, .btn-outline-primary.custom-file-control:active:before, .btn-outline-primary.custom-file-control:focus:before, .btn-outline-primary.custom-file-control:hover:before, .btn-outline-primary.focus.custom-file-control:before, .btn.btn-outline-primary.active, .btn.btn-outline-primary.focus, .btn.btn-outline-primary:active, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:hover, .open>.btn-outline-primary.dropdown-toggle.custom-file-control:before, .open>.btn.btn-outline-primary.dropdown-toggle {
+    
+    background-color: #D35298;
+    color:#FFFFFF!important;
+    
+}
+
+.rounded-circle{
+    border:1px solid;
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    object-fit:cover
+}
+
+.profile-body{
+    margin-left: 20vw;
+    margin-top: 0.1vw;
+}
+
+.card-body{
+    text-align: start;
+}
+
+.label-container {
+
+}
+
+.label-container .lead.fw-normal{
+    margin: 0 2rem;
+    
+}
+
+.label-container .lead.fw-normal::after{
+    color:#D35298;
+}
+
+.label-container .lead.fw-normal:active{
+    color:#D35298;
+}
+
+
+/* TRIAL */
+.chord-lyric-line {
+    line-height: 50px;
+    text-align: start;
+    /* margin-top: 0.2rem; */
+    padding: 0 20px;
+    border-right: dashed 2px #ccc;
+    /* word-break: break-all; */
+    overflow-wrap: break-word;
+    
+}
+
+
+
+.chord-inline {
+    
+    position: absolute;
+    display: inline-block;
+    margin-top: -1.5em;
+    
+}
+.chord {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #D35298;
+    font-weight: 600;
+    cursor: pointer;
+}
+.lyric {
+    /* display: inline-block; : somehow this disable the overflow text wrap*/
+    white-space: pre-wrap;  
+    
+    /* word-break: break-all; */
+}
+
+#title-nav {
+    text-align: start;
+    padding-top:1rem;
+    padding-left: 2.8rem;
+}
+
+#contents {
+    padding: 1.5rem;
+}
+
+.modal {
+    background: rgba(255, 255, 255, 0.8);
+}
+.modal-backdrop {
+    display: none;
+};
+
+
+
+#creator-link {
+    font-size: 12px;
+}
+
+#editPage .edit-label{
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#editPage .form-control{
+    margin-top: 16px;
+    background-color: #eeeeee;
+    
+}
+
+.functional-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.utility-tool {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.functional-row .btn.bmd-btn-icon{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+#myfab{
+    background-color: #D35298;
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    display: none;
+}
+
+#addImageDialog{
+    z-index: 100;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left:2.2rem;
+}
+
+#myName{
+    text-align: center;
+}
+
+#myAccountPage .bmd-form-group {
+    position: relative;
+    padding-top: 0;
+}
+
+#pan img{
+    max-width: 100%;
+     height: auto;
+}
+
+.cardContainer{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    box-shadow: #333;
+}
+
+.flexible-icon{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.flexible-button{
+    margin-right: 20px!important;
+}
+
+.cardContainer{
+    border: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    margin-bottom: 10px;
+}
+
+.cardContainer .card {
+    border: 0;
+    box-shadow: none;
+}
+
+#upload-button{
+    z-index: 100;margin-top:100px;margin-left:-40px;
+    background-color: #ccc;
+    
+
+}
