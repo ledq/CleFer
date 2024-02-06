@@ -33,7 +33,7 @@ Note: This is the title search only, not a full-text search. Although we can do 
 
 Future Improvement: 
 - Firebase suggests using third-party search services such as Algolia, Elastic, or Typesense for full-text search. 
-- I also found this tiny but powerful search engine written in Javascript, which can be easily imported into your projects by using CDN (with script tag).
+- I also found this tiny but powerful search engine written in Javascript, which can be easily imported by using CDN: https://github.com/lucaong/minisearch
 
 
 
