@@ -31,9 +31,9 @@ _search() {
 Note: This is the title search only, not a full-text search. Although we can do full-text search via this method, it might not be efficient. 
 
 
-Potentially development: 
-Firebase suggests using third-party search services such as Algolia, Elastic, or Typesense for full-text search. 
-I also found this tiny but powerful search engine written in Javascript, which can be easily imported into your projects by using CDN (with script tag).
+Future Improvement: 
+- Firebase suggests using third-party search services such as Algolia, Elastic, or Typesense for full-text search. 
+- I also found this tiny but powerful search engine written in Javascript, which can be easily imported into your projects by using CDN (with script tag).
 
 
 
