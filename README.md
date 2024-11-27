@@ -8,7 +8,7 @@ https://ledq-project.web.app/
 
 
 
-# CleFer helps users by:
+# CleFer helps users with:
 - Finding songs and their corresponding chords and lyrics for guitar players
 - Contributing their own contents to help others
 - Creating a community that helps learning and practicing guitar easier
